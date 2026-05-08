@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="quiz.css">
+</head>
+
+<body>
+
+    <!-- HEADER (same as home page) -->
+   <header>
+
+  <div class="leftHeader">
+    <span id="backBtn">⬅</span>
+    <h2>Quiz game</h2>
+  </div>
+
+  <span id="modeToggle">🌙</span>
+
+</header>
+
+    <!-- START BUTTON -->
+     
+    <div class="startBtn"> Start a Quiz</div>
+
+    <!-- MAIN CONTAINER -->
+    <div class="container">
+        <h1>Let's Play</h1>
+
+        <div class="question"></div>
+        <div class="choices"></div>
+
+        <button class="btn nextBtn">Next</button>
+
+        <div class="scoreCard"></div>
+        <div class="timer"></div>
+
+        <!-- BACK BUTTON -->
+        <button class="btn backBtn" onclick="goBack()">⬅ Back</button>
+    </div>
+
+    <!-- ALERT -->
+    <div class="alert">Alert</div>
+
+    <!-- JS -->
+    <script src="quiz.js"></script>
+
+</body>
+</html>

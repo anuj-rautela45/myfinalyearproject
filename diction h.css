@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+/* DARK */
+body{
+  background: linear-gradient(45deg,#0f172a,#1e293b);
+  color:white;
+  height:100vh;
+}
+
+/* LIGHT */
+body.light{
+  background: linear-gradient(45deg,#fdf2f8,#ffe4ec);
+  color:black;
+}
+
+/* HEADER */
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 20px;
+}
+
+/* TOGGLE (same as dictionary) */
+#modeToggle{
+  padding:6px 12px;
+  border-radius:20px;
+  background:#3b82f6;
+  color:white;
+  cursor:pointer;
+}
+
+body.light #modeToggle{
+  background:#ec4899;
+}
+
+/* CENTER */
+.container{
+  height:90vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* BOX */
+.box{
+  width:300px;
+  padding:20px;
+  border-radius:16px;
+  border:1px solid #334155;
+  box-shadow:0 3px 15px rgba(0,0,0,0.5);
+  text-align:center;
+}
+
+/* HISTORY LIST */
+#historyList{
+  max-height:180px;
+  overflow-y:auto;
+  margin-bottom:10px;
+  text-align:left;
+}
+
+/* WORD ITEM */
+.word{
+  padding:10px;
+  margin:5px 0;
+  border-radius:8px;
+  background:rgba(255,255,255,0.1);
+  cursor:pointer;
+  font-size:14px;
+}
+
+body.light .word{
+  background:rgba(0,0,0,0.05);
+}
+
+/* BUTTON */
+button{
+  width:100%;
+  padding:10px;
+  margin-top:5px;
+  border:none;
+  border-radius:20px;
+  background:#3b82f6;
+  color:white;
+  cursor:pointer;
+}
+
+body.light button{
+  background:#ec4899;
+}
+
+/* 📱 MOBILE RESPONSIVE (same feel as dictionary) */
+@media (max-width:768px){
+
+  .container{
+    height:auto;
+    padding:20px;
+  }
+
+  .box{
+    width:100%;
+    max-width:400px;
+    margin:auto;
+    padding:15px;
+  }
+
+  #historyList{
+    max-height:250px;
+  }
+
+  .word{
+    font-size:16px;
+    padding:12px;
+  }
+
+  button{
+    font-size:16px;
+    padding:12px;
+  }
+
+  header{
+    font-size:18px;
+    padding:12px 15px;
+  }
+}

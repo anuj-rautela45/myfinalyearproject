@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* DARK MODE */
+body{
+    width:100%;
+    min-height:100vh;
+    background: linear-gradient(45deg,#0f172a,#1e293b);
+    color:#fff;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+/* LIGHT MODE */
+body.light{
+    background: linear-gradient(45deg,#fdf2f8,#ffe4ec);
+    color:#000;
+}
+
+/* HEADER */
+header{
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 25px;
+}
+
+/* left side */
+.leftHeader{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+/* back button */
+#backBtn{
+  font-size:22px;
+  cursor:pointer;
+}
+
+/* mobile */
+@media(max-width:768px){
+
+  header{
+    padding:12px 15px;
+  }
+
+  .leftHeader h2{
+    font-size:20px;
+  }
+
+  #backBtn{
+    font-size:20px;
+  }
+}
+
+/* TOGGLE BUTTON */
+#modeToggle{
+    padding:6px 12px;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+    background:#3b82f6;
+    color:#fff;
+}
+
+body.light #modeToggle{
+    background:#ec4899;
+}
+
+/* START BUTTON */
+.startBtn{
+    width:200px;
+    padding:15px;
+    text-align:center;
+    border-radius:20px;
+    background:#3b82f6;
+    color:#fff;
+    cursor:pointer;
+    margin-top:40px;
+}
+
+body.light .startBtn{
+    background:#ec4899;
+}
+
+/* CONTAINER */
+.container{
+    width:90%;
+    max-width:800px;
+    padding:20px;
+    text-align:center;
+    display:none;
+    margin-top:20px;
+}
+
+/* TITLE */
+.container h1{
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+/* QUESTION */
+.question{
+    font-size:22px;
+    margin:20px 0;
+}
+
+/* CHOICES */
+.choice{
+    font-size:18px;
+    background:rgba(255,255,255,0.1);
+    margin:10px auto;
+    padding:12px;
+    border-radius:10px;
+    width:100%;
+    cursor:pointer;
+    transition:0.2s;
+}
+
+/* Hover */
+.choice:hover{
+    transform:scale(1.03);
+}
+
+/* Selected */
+.choice.selected{
+    background:#3b82f6;
+    color:#fff;
+}
+
+body.light .choice.selected{
+    background:#ec4899;
+}
+
+/* BUTTON */
+.btn{
+    width:100%;
+    padding:12px;
+    margin-top:15px;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+    background:#3b82f6;
+    color:#fff;
+    font-size:16px;
+}
+
+body.light .btn{
+    background:#ec4899;
+}
+
+/* BACK BUTTON */
+.backBtn{
+    margin-top:10px;
+}
+
+/* SCORE */
+.scoreCard{
+    font-size:20px;
+    margin-top:15px;
+}
+
+/* ALERT */
+.alert{
+    position:fixed;
+    top:10px;
+    left:50%;
+    transform:translateX(-50%);
+    padding:10px 20px;
+    border-radius:10px;
+    display:none;
+    background:#3b82f6;
+    color:#fff;
+}
+
+body.light .alert{
+    background:#ec4899;
+}
+
+/* TIMER */
+.timer{
+    position:fixed;
+    top:80px;
+    right:20px;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:18px;
+    background:#3b82f6;
+    color:#fff;
+}
+
+body.light .timer{
+    background:#ec4899;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width:768px){
+
+    .container{
+        width:95%;
+    }
+
+    .container h1{
+        font-size:22px;
+    }
+
+    .question{
+        font-size:18px;
+    }
+
+    .choice{
+        font-size:16px;
+        padding:10px;
+    }
+
+    .btn{
+        font-size:14px;
+    }
+
+    .timer{
+        width:50px;
+        height:50px;
+        font-size:16px;
+        top:70px;
+    }
+
+    .startBtn{
+        width:70%;
+    }
+}

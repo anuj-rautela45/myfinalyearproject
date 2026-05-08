@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+ font-family:'Poppins',sans-serif;
+}
+
+
+/* DARK */
+body{
+  background: linear-gradient(45deg,#0f172a,#1e293b);
+  color:white;
+}
+
+/* LIGHT */
+body.light{
+  background: linear-gradient(45deg,#fdf2f8,#ffe4ec);
+  color:black;
+}
+
+/* HEADER */
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 20px;
+}
+
+/* TOGGLE */
+#modeToggle{
+  padding:6px 12px;
+  border-radius:20px;
+  background:#3b82f6;
+  color:white;
+  cursor:pointer;
+}
+
+body.light #modeToggle{
+  background:#ec4899;
+}
+
+/* TOPBAR */
+.topbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:10px 20px;
+}
+
+/* SCORE BIG */
+#score{
+  font-size:22px;
+  font-weight:bold;
+}
+
+/* BUTTON */
+button{
+  padding:10px 15px;
+  border:none;
+  border-radius:20px;
+  background:#3b82f6;
+  color:white;
+  cursor:pointer;
+}
+
+body.light button{
+  background:#ec4899;
+}
+
+/* GAME AREA */
+.game-area{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:70vh;
+}
+
+/* CANVAS */
+canvas{
+  width:85vmin;
+  height:85vmin;
+  background:#0f172a;
+  border:2px solid #3b82f6;
+}
+
+body.light canvas{
+  background:white;
+  border:2px solid #ec4899;
+}
+
+/* 👇 BOTTOM AREA */
+.bottom-area{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:10vh;
+}
+
+/* 👇 HIDDEN BUTTON */
+#homeBtn{
+  display:none;
+  padding:12px 20px;
+  font-size:16px;
+}
+
+/* 📱 MOBILE */
+@media (max-width:600px){
+
+  #score{
+    font-size:18px;
+  }
+
+  button{
+    font-size:14px;
+    padding:10px;
+  }
+
+  canvas{
+    width:90vw;
+    height:90vw;
+  }
+}
