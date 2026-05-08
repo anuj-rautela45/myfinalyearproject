@@ -44,7 +44,7 @@ function loadHistory(){
 
     div.onclick = () => {
       localStorage.setItem("searchWord", word);
-      window.location.href = "../dictionary/dictionary.html";
+      window.location.href = "dictionary.html";
     };
 
     list.appendChild(div);
@@ -53,7 +53,7 @@ function loadHistory(){
 
 // BACK
 function goBack(){
-  window.location.href = "../dictionary/dictionary.html";
+  window.location.href = "dictionary.html";
 }
 
 // CLEAR
