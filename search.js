@@ -90,5 +90,5 @@ searchinput.addEventListener('keydown', function(event) {
   });
   // BACK TO HOME
 document.getElementById("backBtn").onclick = () => {
-  window.location.href = "../home/index.html";
+  window.location.href = "index.html";
 };
