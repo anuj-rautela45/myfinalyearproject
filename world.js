@@ -88,25 +88,25 @@ async function city(cityName) {
     weatherImg.className = "weather";
 
     if (data.weather[0].main === "Rain") {
-      weatherImg.src = "img/rain.png";
+      weatherImg.src = "rain.png";
     } else if (data.weather[0].main === "Clear" || data.weather[0].main === "Clear Sky") {
-      weatherImg.src = "img/sun.png";
+      weatherImg.src = "sun.png";
     } else if (data.weather[0].main === "Snow") {
-      weatherImg.src = "img/snow.png";
+      weatherImg.src = "snow.png";
     } else if (
       data.weather[0].main === "Clouds" ||
       data.weather[0].main === "Smoke"
     ) {
-      weatherImg.src = "img/cloud.png";
+      weatherImg.src = "cloud.png";
     } else if (
       data.weather[0].main === "Mist" ||
       data.weather[0].main === "Fog"
     ) {
-      weatherImg.src = "img/mist.png";
+      weatherImg.src = "mist.png";
     } else if (data.weather[0].main === "Haze") {
-      weatherImg.src = "img/haze.png";
+      weatherImg.src = "haze.png";
     } else if (data.weather[0].main === "Thunderstorm") {
-      weatherImg.src = "img/thunderstorm.png";
+      weatherImg.src = "thunderstorm.png";
     }
 
     weatherIconDiv.appendChild(weatherImg);
@@ -161,5 +161,5 @@ city("Mumbai");
 city("Dehradun");
 // BACK TO HOME
 document.getElementById("backBtn").onclick = () => {
-  window.location.href = "../home/index.html";
+  window.location.href = "index.html";
 };
