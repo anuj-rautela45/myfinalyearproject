@@ -83,9 +83,9 @@ document.addEventListener("keydown",(e)=>{
 });
 
 function openHistory(){
-  window.location.href = "../history/history.html";
+  window.location.href = "history.html";
 }
 // BACK TO HOME
 document.getElementById("backBtn").onclick = () => {
-  window.location.href = "../home/index.html";
+  window.location.href = "index.html";
 };
