@@ -36,9 +36,9 @@ function openHighScore(){
 }
 
 function goHome(){
-  window.location.href = "../home/index.html";
+  window.location.href = "index.html";
 }
 // BACK TO HOME
 document.getElementById("backBtn").onclick = () => {
-  window.location.href = "../home/index.html";
+  window.location.href = "index.html";
 };
