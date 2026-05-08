@@ -215,5 +215,5 @@ nextBtn.onclick = () => {
 };
 // BACK TO HOME
 document.getElementById("backBtn").onclick = () => {
-  window.location.href = "../home/index.html";
+  window.location.href = "index.html";
 };
