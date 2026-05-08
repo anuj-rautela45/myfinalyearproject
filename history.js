@@ -50,5 +50,5 @@ function clearHistory(){
 
 /* Back */
 function goHome(){
-  window.location.href="../calculator/calculator.html";
+  window.location.href="calculator.html";
 }
