@@ -1,0 +1,131 @@
+/* Reset */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+ font-family:'Poppins',sans-serif;
+}
+
+/* Body */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(45deg,#0f172a,#1e293b);
+  color: white;
+  text-align: center;
+  transition: 0.4s;
+}
+
+/* Light Mode */
+body.light {
+  background: linear-gradient(45deg,#fdf2f8,#ffe4ec);
+  color: #222;
+}
+
+/* Header */
+header {
+  padding: 40px 20px;
+  position: relative;
+}
+
+/* Toggle Button */
+#toggleMode {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: white;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+#toggleMode:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+/* Light Mode Toggle */
+body.light #toggleMode {
+   background:#ec4899;
+  color: #333;
+}
+
+/* Sections */
+section {
+  width: 98%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 25px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.08);
+}
+
+body.light section {
+  background: rgba(0,0,0,0.05);
+}
+
+.about {
+  margin-bottom: 30px;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 18px;
+  margin-top: 20px;
+}
+
+/* Buttons */
+button {
+  padding: 16px;
+  font-size: 15px;
+  font-weight: 600px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  font-weight: 500;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+button:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* Light Mode Buttons */
+body.light button {
+   background:#ec4899;
+  color: #333;
+}
+
+/* Light Hover */
+body.light button:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  padding: 10px;
+  opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  section {
+    width: 95%;
+  }
+}
