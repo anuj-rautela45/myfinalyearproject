@@ -33,7 +33,7 @@ toggle.addEventListener("click", () => {
 
 // OPEN HISTORY
 function openHistory(){
-  window.location.href = "../diction h/diction h.html";
+  window.location.href = "diction h.html";
 }
 
 // SAVE HISTORY
@@ -79,5 +79,5 @@ async function searchWord(){
 }
 // BACK TO HOME
 document.getElementById("backBtn").onclick = () => {
-  window.location.href = "../home/index.html";
+  window.location.href = "index.html";
 };
