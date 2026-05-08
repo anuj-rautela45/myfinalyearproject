@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+/* DARK MODE */
+body{
+  background: linear-gradient(45deg,#0f172a,#1e293b);
+  color:white;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  height:100vh;
+}
+
+/* LIGHT MODE */
+body.light{
+  background: linear-gradient(45deg,#fdf2f8,#ffe4ec);
+  color:black;
+}
+
+/* Header */
+header{
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 25px;
+}
+
+/* left side */
+.leftHeader{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+/* back button */
+#backBtn{
+  font-size:22px;
+  cursor:pointer;
+}
+
+/* mobile */
+@media(max-width:768px){
+
+  header{
+    padding:12px 15px;
+  }
+
+  .leftHeader h2{
+    font-size:20px;
+  }
+
+  #backBtn{
+    font-size:20px;
+  }
+}
+
+/* Container */
+.container{
+  flex:1;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* Calculator */
+.calculator{
+  border:1px solid #334155;
+  padding:20px;
+  border-radius:16px;
+  box-shadow:0 3px 15px rgba(0,0,0,0.5);
+}
+
+/* Input */
+input{
+  width:320px;
+  padding:20px;
+  margin:10px;
+  font-size:35px;
+  text-align:right;
+  border:none;
+  background:transparent;
+  color:inherit;
+}
+
+/* Buttons */
+button{
+  width:60px;
+  height:60px;
+  margin:10px;
+  border-radius:50%;
+  border:none;
+  font-size:18px;
+  background:transparent;
+  color:inherit;
+  cursor:pointer;
+  box-shadow:-5px -5px 10px rgba(255,255,255,0.05);
+  transition:0.2s;
+}
+
+button:hover{
+  transform:scale(1.05);
+}
+
+/* Equal */
+.equalBtn{
+  background:#3b82f6;
+  color:white;
+}
+
+/* Operator */
+.operator{
+  color:#3b82f6;
+}
+
+/* Light mode colors */
+body.light .equalBtn{
+  background:#ec4899;
+}
+
+body.light .operator{
+  color:#ec4899;
+}
+
+/* History button */
+.historyBtn{
+  width:100%;
+  margin-top:10px;
+  border-radius:20px;
+  background:#3b82f6;
+  color:white;
+}
+
+body.light .historyBtn{
+  background:#ec4899;
+}
+
+/* Toggle */
+/* Toggle button default (dark mode) */
+#modeToggle{
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  background: #3b82f6;  /* BLUE */
+  color: white;
+}
+
+/* Light mode toggle */
+body.light #modeToggle{
+  background: #ec4899;  /* PINK */
+  color: white;
+}
