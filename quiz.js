@@ -34,7 +34,7 @@ if(toggleBtn){
 
 /* ================= BACK ================= */
 function goBack(){
-  window.location.href = "../home/index.html";
+  window.location.href = "index.html";
 }
 
 /* ================= QUIZ DATA ================= */
